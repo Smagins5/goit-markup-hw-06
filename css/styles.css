@@ -551,6 +551,47 @@ body {
     fill: var(--white-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+                                      /* mailing form section */
+.service-form {
+    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+}
+.mailing-hero {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.input-form {
+
+}
+.input-style input {
+    padding: 15px;
+    padding-left: 16px;
+    width: 358px;
+    background-color: #2F303A;
+}
+.input-style input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+.input-stroke {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+
 
                                     /* Страница Портфолио */
 
