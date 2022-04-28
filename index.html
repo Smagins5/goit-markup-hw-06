@@ -283,7 +283,7 @@
                     </address>
                 </div>
                 <div class="social-item">
-                    <h3 class="join-hero">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                    <h3 class="join-hero">Присоединяйтесь</h3>
                         <div class="join-link">
                         <a class="link" href="#">
                             <svg class="join-svg" width="20" height="20">
@@ -313,11 +313,13 @@
                             <form class="input-form">
                                 <div class="input-style">
                                     <label for="mail"></label>
-                                    <input class="input-stroke" type="email" name="mail" id="mail" placeholder="E-mail">
-                                    <button class="mailing-button" type="submit">Подписаться</button>
-                                    <svg width="24" height="24">
-                                        <use href="./images/icons.svg#icon-telegram"></use>
-                                    </svg>
+                                    <input type="email" name="mail" id="mail" placeholder="E-mail">
+                                            <div class="button-style" >
+                                            <button class="mailing-button" type="submit">Подписаться</button>
+                                                <svg class="service-icon" width="24" height="24">
+                                                    <use href="./images/icons.svg#icon-telegram"></use>
+                                                </svg>
+                                            </div>
                                 </div>
                         </div>
                     </div>
@@ -329,12 +331,38 @@
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
                 <button data-modal-close class="button-close" type="button" >  
-                <svg class="modal-close" width="11" height="11" >
-                    <use href="./images/icons.svg#model-close"></use>
-                </svg>
+                    <svg class="modal-close" width="11" height="11" >
+                        <use href="./images/icons.svg#model-close"></use>
+                    </svg>
                 </button>
+            <div class="modal-input">
+                <h3 class="modal-hero">Оставьте свои данные, мы вам перезвоним</h3>
+                    <form class="" >
+                    <div role="group" class="">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" id="name">
+
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel">
+
+                        <label for="mail">Почта</label>
+                        <input type="email" name="mail" id="mail">
+
+                        <label for="comments">Коментарии</label>
+                        <textarea name="comments" id="comments" rows="8" placeholder="Введите текст"></textarea>
+
+                        <div>  
+                        <input type="checkbox" name="treaty" value="treaty" id="treaty">
+                        <label for="treaty">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                        </div>
+
+                        <button type="submit">Отправить</button>
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
+        
         <script src="./js/modal.js"></script>
 </body>
 </html>

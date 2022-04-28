@@ -243,6 +243,32 @@ body {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal-hero {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0;
+}
+.modal-input {
+    
+}
+
+
+
+
+
+
+
+
+
                                 /* Benefits section */
 .benefits-list {
     display: flex;  
@@ -306,9 +332,9 @@ body {
     margin-left: 30px;
 }
 .work-list .item{
+    position: relative;
     display: block;
     max-width: 100%;
-    position: relative;
 }
 .work-list .item::after {
     content: '';
@@ -413,7 +439,7 @@ body {
     outline: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-                                /* clients section */
+                                /* Clients section */
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -509,14 +535,14 @@ body {
 }
 .join-hero {
     display: flex;
+    margin-top: 12px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-    margin-top: 12px;
-    margin-bottom: 20px;
 }
 .social-item {
     display: flex;
@@ -551,7 +577,7 @@ body {
     fill: var(--white-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-                                      /* mailing form section */
+                                      /* Mailing form section */
 .service-form {
     margin-left: 93px;
     display: flex;
@@ -567,25 +593,48 @@ body {
     color: var(--white-color);
     text-transform: uppercase;
 }
-.input-form {
-
-}
+.input-style {
+    display: flex;
+} 
 .input-style input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
     padding: 15px;
     padding-left: 16px;
     width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    color: var(--white-color);
     background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .input-style input::placeholder {
     color: rgba(255, 255, 255, 0.6);
-    
 }
-.input-stroke {
+.mailing-button {
+    padding: 0;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
     border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white-color);
+    background-color: var(--color-logo);
+} 
+.button-style {
+    position: relative;
 }
-
-
+.service-icon::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+}
 
 
 
