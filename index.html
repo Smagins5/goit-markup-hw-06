@@ -309,22 +309,20 @@
                     </div>
                     <div class="service-form">
                         <h3 class="mailing-hero">Подпишитесь на рассылку</h3>
-                        <div>
                             <form class="input-form">
                                 <div class="input-style">
                                     <label for="mail"></label>
                                     <input type="email" name="mail" id="mail" placeholder="E-mail">
-                                            <div class="button-style" >
-                                            <button class="mailing-button" type="submit">Подписаться</button>
+                                            <div class="button-style">
+                                            <button class="mailing-button" type="submit">Подписаться 
                                                 <svg class="service-icon" width="24" height="24">
                                                     <use href="./images/icons.svg#icon-telegram"></use>
                                                 </svg>
+                                            </button>
                                             </div>
                                 </div>
-                        </div>
                     </div>
                             </form>
-                </div>
             </div>
         </footer>
         <!-- Модалка на Service section -->
@@ -335,29 +333,37 @@
                         <use href="./images/icons.svg#model-close"></use>
                     </svg>
                 </button>
-            <div class="modal-input">
+            <div class="">
                 <h3 class="modal-hero">Оставьте свои данные, мы вам перезвоним</h3>
-                    <form class="" >
-                    <div role="group" class="">
+                    <form class="form">
+                    <!-- <div role="group" class=""> -->
+                        <div class="form-item">
                         <label for="name">Имя</label>
-                        <input type="text" name="name" id="name">
-
+                        <svg class="icon-person" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                        <input class="form-input" type="text" name="name" id="name"> 
+                        
+                        </div>
+                        <div class="form-item">
                         <label for="tel">Телефон</label>
                         <input type="tel" name="tel" id="tel">
-
+                        </div>
+                        <div class="form-item">
                         <label for="mail">Почта</label>
                         <input type="email" name="mail" id="mail">
-
+                        </div>
+                        <div class="form-comments">
                         <label for="comments">Коментарии</label>
-                        <textarea name="comments" id="comments" rows="8" placeholder="Введите текст"></textarea>
-
-                        <div>  
+                        <textarea class="form-coments" name="comments" id="comments" rows="6" placeholder="Введите текст"></textarea>
+                        </div>  
+                        <div class="form-check">  
                         <input type="checkbox" name="treaty" value="treaty" id="treaty">
-                        <label for="treaty">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                        <label for="treaty">Соглашаюсь с рассылкой и принимаю <span><a class="treaty-check" href="#">Условия договора</a></span></label>
                         </div>
 
-                        <button type="submit">Отправить</button>
-                    </div>
+                        <button class="button-submit" type="submit">Отправить</button>
+                    <!-- </div> -->
                     </form>
                 </div>
             </div>
