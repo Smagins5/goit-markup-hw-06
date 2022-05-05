@@ -336,34 +336,33 @@
             <div class="">
                 <h3 class="modal-hero">Оставьте свои данные, мы вам перезвоним</h3>
                     <form class="form">
-                    <!-- <div role="group" class=""> -->
                         <div class="form-item">
                         <label for="name">Имя</label>
-                        <svg class="icon-person" width="18" height="18">
-                            <use href="./images/icons.svg#icon-person"></use>
-                        </svg>
+                        <div class="form-border">
                         <input class="form-input" type="text" name="name" id="name"> 
-                        
+                        <svg class="form-icon" width="18" height="18"><use href="./images/icons.svg#icon-person"></use></svg>
+                        </div>
                         </div>
                         <div class="form-item">
                         <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel">
+                        <div class="form-border">
+                        <input class="form-input" type="tel" name="tel" id="tel">
+                        <svg class="form-icon" width="18" height="18"><use href="./images/icons.svg#icon-phone"></use></svg></div>
                         </div>
                         <div class="form-item">
                         <label for="mail">Почта</label>
-                        <input type="email" name="mail" id="mail">
+                        <div class="form-border">
+                        <input class="form-input" type="email" name="mail" id="mail">
+                        <svg class="form-icon" width="18" height="18"><use href="./images/icons.svg#icon-email"></use></svg></div>
                         </div>
                         <div class="form-comments">
                         <label for="comments">Коментарии</label>
                         <textarea class="form-coments" name="comments" id="comments" rows="6" placeholder="Введите текст"></textarea>
                         </div>  
-                        <div class="form-check">  
-                        <input type="checkbox" name="treaty" value="treaty" id="treaty">
-                        <label for="treaty">Соглашаюсь с рассылкой и принимаю <span><a class="treaty-check" href="#">Условия договора</a></span></label>
+                        <div class="form-check">
+                        <label class="label-check"><input class="input-check" type="checkbox" name="treaty" value="treaty"><span class="icon-check"></span>Соглашаюсь с рассылкой и принимаю <span><a class="treaty-check" href="#">Условия договора</a></span></label>
                         </div>
-
                         <button class="button-submit" type="submit">Отправить</button>
-                    <!-- </div> -->
                     </form>
                 </div>
             </div>
