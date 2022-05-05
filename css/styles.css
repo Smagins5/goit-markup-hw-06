@@ -391,19 +391,16 @@ textarea {
 }
 .icon-check {
     display: inline-block;
-    width: 15px;
-    height: 15px;
     margin-right: 8px;
     border: 2px solid var(--secondary-text-color);
     border-radius: 2px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-check:checked + .icon-check {
-    border-color: var(--color-logo);
     background-color: var(--color-logo);
-    background-image: url('../images/icon-check.svg');
-    background-size: contain;
-    background-origin: border-box;
+    padding-right: 1px;
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-check:hover {
     border-color: var(--color-logo);
